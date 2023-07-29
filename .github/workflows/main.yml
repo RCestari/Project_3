@@ -15,6 +15,6 @@ jobs:
     - name: no name
       run: cat /etc/os-release
       
-    - name: date and time:
-     run: date
+    - name: date and time
+      run: date
    
