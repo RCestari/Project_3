@@ -1,11 +1,20 @@
 name: Hello World
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs: 
-  build:
+  system_info:
     runs-on: ubuntu-latest
     
     steps:
     - name: Say Hello
       run: echo "hello, World"
+      
+    - name: no name
+      run: cat /etc/os-release
+      
+    - name: date and time:
+     run: date
    
